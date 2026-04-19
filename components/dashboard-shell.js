@@ -7,7 +7,7 @@ import { TaskPaymentTrigger, WalletStatusCard } from "@/components/task-payment-
 
 const socialLinks = [
   { href: "https://x.com/XPhantom_s", label: "X", icon: Twitter },
-  { href: "https://github.com/zkacfun", label: "GitHub", icon: Github },
+  { href: "https://github.com/XPhantom-max/XPhantom.git", label: "GitHub", icon: Github },
 ];
 
 export const navGroups = [
