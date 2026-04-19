@@ -1,5 +1,18 @@
 # XPhantom
 
+<p align="center">
+  <picture>
+    <source srcset="./public/xphantom-logo.svg" type="image/svg+xml">
+    <img src="./public/xphantom-logo.jpg" width="132" height="132" alt="XPhantom logo">
+  </picture>
+</p>
+
+<p align="center">
+  <strong>Solana token project site with Phantom wallet payments, live CA publishing, and a hidden launch admin.</strong>
+</p>
+
+The README logo uses an SVG source with a JPG fallback so renderers that block SVG previews can still display the brand mark.
+
 XPhantom is a Solana-facing token project website and control dashboard. It combines a polished project landing page, Phantom wallet connection, Solana USDC payment flow, live contract address publishing, and a hidden developer admin panel for updating the CA without rebuilding the site.
 
 The current product experience is designed around a privacy-first AI/runtime narrative for the XPhantom community, with social links, GitHub placement, wallet actions, purchase tiers, and mobile/desktop responsive layouts already built in.
@@ -87,6 +100,7 @@ The CA accepts either an EVM-style `0x` address or a 32-44 character base58 addr
 - `lib/server/dev-admin.js`: runtime config storage and session validation.
 - `app/api/dev-admin/route.js`: admin API for auth and CA updates.
 - `public/xphantom-logo.jpg`: current XPhantom logo asset.
+- `public/xphantom-logo.svg`: README-ready SVG logo with JPG fallback.
 
 ## Build
 
