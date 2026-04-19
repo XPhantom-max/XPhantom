@@ -19,6 +19,7 @@ import {
   Wallet,
 } from "lucide-react";
 import { DashboardHeader, DashboardSidebar, MobileQuickNav } from "@/components/dashboard-shell";
+import { MvpModulesSection } from "@/components/mvp-modules-section";
 import { TaskPaymentTrigger } from "@/components/task-payment-provider";
 import { getDashboardHomeData } from "@/lib/services/dashboard";
 
@@ -448,6 +449,8 @@ export function HomePage() {
               </div>
             </div>
           </section>
+
+          <MvpModulesSection />
 
           <div className="dashboard-home-main-grid mt-6 grid grid-cols-1 gap-6 xl:grid-cols-12">
             <div className="space-y-6 xl:col-span-8">

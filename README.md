@@ -17,6 +17,23 @@ The current product experience is designed around a privacy-first AI/runtime nar
 - Mobile and desktop responsive dashboard layout.
 - Static snapshot fallback pages for legacy sections such as API Keys, Payments, Settings, and Help.
 
+## MVP Modules
+
+The first MVP is the shortest complete user loop:
+
+`Discover XPhantom -> Verify CA -> Connect Phantom -> Purchase USDC task -> Join the community`
+
+Core modules:
+
+- Project identity and social links.
+- Live CA publishing through the hidden developer admin.
+- Phantom wallet connection and Solana USDC balance read.
+- USDC payment request flow.
+- Conversion layer for CA copy, wallet action, X, and GitHub.
+- Launch operations with README, env example, and checklist.
+
+See `docs/MVP_MODULES.md` for the full first-principles breakdown.
+
 ## Project Links
 
 - X/Twitter: https://x.com/XPhantom_s
