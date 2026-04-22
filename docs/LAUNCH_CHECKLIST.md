@@ -5,9 +5,10 @@ Use this checklist before publishing the XPhantom Solana token project site.
 ## Brand
 
 - Confirm project name is `XPhantom`.
-- Confirm logo asset at `public/xphantom-logo.jpg`.
+- Confirm logo assets at `public/xphantom-logo.png`, `public/xphantom-logo.jpg`, and `public/xphantom-logo.svg`.
+- Confirm official website link is `https://www.xphm.fun/`.
 - Confirm X/Twitter link is `https://x.com/XPhantom_s`.
-- Confirm GitHub link is correct before public launch.
+- Confirm GitHub link is `https://github.com/XPhantom-max/XPhantom.git`.
 
 ## Token And CA
 

@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { Bell, Bot, CircleQuestionMark, Database, FileCheck, Github, KeyRound, LayoutDashboard, Plus, Search, Settings, Shield, TriangleAlert, Twitter, Wallet, Activity } from "lucide-react";
+import { Activity, Bell, Bot, CircleQuestionMark, Database, FileCheck, Github, Globe2, KeyRound, LayoutDashboard, Plus, Search, Settings, Shield, TriangleAlert, Twitter, Wallet } from "lucide-react";
 import { ContractAddressChip } from "@/components/contract-address-chip";
 import { DevAdminAvatar } from "@/components/dev-admin-avatar";
 import { RuntimeLogo } from "@/components/runtime-logo";
 import { TaskPaymentTrigger, WalletStatusCard } from "@/components/task-payment-provider";
 
 const socialLinks = [
+  { href: "https://www.xphm.fun/", label: "Website", icon: Globe2 },
   { href: "https://x.com/XPhantom_s", label: "X", icon: Twitter },
   { href: "https://github.com/XPhantom-max/XPhantom.git", label: "GitHub", icon: Github },
 ];

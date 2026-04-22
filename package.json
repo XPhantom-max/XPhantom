@@ -3,6 +3,11 @@
   "private": true,
   "version": "1.0.0",
   "description": "XPhantom Solana token project website with Phantom wallet payments and hidden CA admin",
+  "homepage": "https://www.xphm.fun/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XPhantom-max/XPhantom.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

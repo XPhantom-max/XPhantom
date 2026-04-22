@@ -23,6 +23,7 @@ Goal: Make the project recognizable and easy to share.
 Current implementation:
 
 - XPhantom name and logo.
+- Official website: `https://www.xphm.fun/`.
 - X link: `https://x.com/XPhantom_s`.
 - GitHub link placement.
 - Responsive brand shell on desktop and mobile.
@@ -31,7 +32,7 @@ Acceptance criteria:
 
 - The first screen shows the project name.
 - The logo is visible.
-- X and GitHub links are reachable.
+- Website, X, and GitHub links are reachable.
 
 ## Module 2: Live CA Publishing
 
@@ -80,7 +81,7 @@ Current implementation:
 - Start payment CTA.
 - Copy CA action.
 - Open X action.
-- GitHub link placement.
+- Website and GitHub link placement.
 - Global interaction handling for legacy snapshot buttons.
 
 Acceptance criteria:

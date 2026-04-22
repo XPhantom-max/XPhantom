@@ -26,7 +26,7 @@ export function DevAdminAvatar() {
       title="Operator avatar"
     >
       <img
-        src="/xphantom-logo.jpg"
+        src="/xphantom-logo.png"
         alt="XPhantom avatar"
         className="h-full w-full rounded-full object-cover"
       />

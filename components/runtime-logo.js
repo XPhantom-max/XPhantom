@@ -3,7 +3,7 @@
 import { Shield } from "lucide-react";
 
 export function RuntimeLogo({ className = "h-9 w-9", iconClassName = "h-4 w-4" }) {
-  const logoUrl = "/xphantom-logo.jpg";
+  const logoUrl = "/xphantom-logo.png";
 
   if (logoUrl) {
     return (

@@ -14,6 +14,8 @@
 <p align="center">
   <a href="https://x.com/XPhantom_s">X / Twitter</a>
   |
+  <a href="https://www.xphm.fun/">Official Website</a>
+  |
   <a href="https://github.com/XPhantom-max/XPhantom.git">GitHub Repository</a>
   |
   <a href="./docs/MVP_MODULES.md">MVP Modules</a>
@@ -59,7 +61,7 @@ The interface uses a privacy-first AI/runtime narrative to give the token projec
 - Password protected CA update flow.
 - Runtime CA storage through `data/runtime-config.json`.
 - Copyable CA display on modern pages and snapshot pages.
-- X/Twitter and GitHub link placement.
+- Official website, X/Twitter, and GitHub link placement.
 - Global interaction bridge for static snapshot buttons.
 - English-only repository content for public GitHub upload.
 
@@ -68,7 +70,7 @@ The interface uses a privacy-first AI/runtime narrative to give the token projec
 | Name | Value |
 | --- | --- |
 | X / Twitter | https://x.com/XPhantom_s |
-| Official website | TBD |
+| Official website | https://www.xphm.fun/ |
 | GitHub repository | https://github.com/XPhantom-max/XPhantom.git |
 | Treasury wallet | `FA9se1UMmzuuUSKvEDqaBKPqCL4vexsKU6cQ1QGgSRJr` |
 | Default admin password | `123456789` |
@@ -155,6 +157,7 @@ sequenceDiagram
 │   └── snapshots.js
 ├── public/
 │   ├── xphantom-logo.jpg
+│   ├── xphantom-logo.png
 │   └── xphantom-logo.svg
 ├── srcdump/
 ├── .env.example
