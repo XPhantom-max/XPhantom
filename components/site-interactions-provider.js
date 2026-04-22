@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { useDeveloperAdmin } from "@/components/developer-admin-provider";
 import { useTaskPayment } from "@/components/task-payment-provider";
 
 const BUTTON_ACTIONS = [
@@ -80,8 +79,6 @@ function isHandledButton(button) {
   return Boolean(
     button.closest(".payment-modal-shell") ||
       button.closest(".wallet-status-card") ||
-      button.closest(".developer-avatar") ||
-      button.closest(".contract-address-chip") ||
       button.closest("[data-global-action='skip']") ||
       (button.type === "submit" && button.closest("form")),
   );
@@ -89,7 +86,6 @@ function isHandledButton(button) {
 
 export function SiteInteractionsProvider({ children }) {
   const router = useRouter();
-  const { contractAddress } = useDeveloperAdmin();
   const { connectWallet, openPayment } = useTaskPayment();
   const [toast, setToast] = useState("");
   const toastTimerRef = useRef(null);
@@ -116,21 +112,14 @@ export function SiteInteractionsProvider({ children }) {
       const context = getButtonContext(button);
 
       if (/copy/i.test(label)) {
-        const isContractCopy = /ca|contract/i.test(label);
         const text =
           button.closest("[data-copy-value]")?.getAttribute("data-copy-value") ||
           button.closest("section, article, div")?.querySelector("code")?.textContent ||
-          (isContractCopy ? contractAddress : "") ||
           "";
 
         if (text && navigator.clipboard) {
           await navigator.clipboard.writeText(text.trim());
           showToast("Copied to clipboard.");
-          return;
-        }
-
-        if (isContractCopy) {
-          showToast("No CA set yet.");
           return;
         }
       }
@@ -172,7 +161,7 @@ export function SiteInteractionsProvider({ children }) {
     return () => {
       document.removeEventListener("click", handleDocumentClick);
     };
-  }, [connectWallet, contractAddress, openPayment, router]);
+  }, [connectWallet, openPayment, router]);
 
   return (
     <>

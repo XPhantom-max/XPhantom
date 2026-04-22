@@ -1,18 +1,15 @@
 import {
   CheckCircle2,
-  KeyRound,
   Rocket,
   ShieldCheck,
   Sparkles,
   Wallet,
 } from "lucide-react";
-import { ContractAddressChip } from "@/components/contract-address-chip";
 import { TaskPaymentTrigger } from "@/components/task-payment-provider";
 import { mvpLoop, mvpModules } from "@/lib/data/mvp";
 
 const moduleIcons = {
   check: CheckCircle2,
-  key: KeyRound,
   rocket: Rocket,
   shield: ShieldCheck,
   sparkles: Sparkles,
@@ -27,12 +24,11 @@ export function MvpModulesSection() {
           <p className="mvp-eyebrow">First-principles MVP</p>
           <h2>XPhantom needs one complete user loop first.</h2>
           <p>
-            The minimum product is not every dashboard feature. It is the shortest path from project discovery to CA
-            verification, wallet action, and community follow-through.
+            The minimum product is not every dashboard feature. It is the shortest path from project discovery to
+            wallet action and community follow-through.
           </p>
         </div>
         <div className="mvp-header-actions">
-          <ContractAddressChip />
           <TaskPaymentTrigger className="mvp-primary-action">
             <Wallet className="h-4 w-4" />
             Start payment

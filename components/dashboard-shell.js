@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { Activity, Bell, Bot, CircleQuestionMark, Database, FileCheck, Github, Globe2, KeyRound, LayoutDashboard, Plus, Search, Settings, Shield, TriangleAlert, Twitter, Wallet } from "lucide-react";
-import { ContractAddressChip } from "@/components/contract-address-chip";
-import { DevAdminAvatar } from "@/components/dev-admin-avatar";
 import { RuntimeLogo } from "@/components/runtime-logo";
 import { TaskPaymentTrigger, WalletStatusCard } from "@/components/task-payment-provider";
 
@@ -170,7 +168,6 @@ export function DashboardHeader({ title }) {
 
       <div className="dashboard-actions flex items-center gap-2 sm:gap-3">
         <SocialLinks compact />
-        <ContractAddressChip />
         <div className="dashboard-search relative hidden md:block">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <input
@@ -192,8 +189,6 @@ export function DashboardHeader({ title }) {
           <Bell className="h-5 w-5" />
           <span className="absolute right-1.5 top-1.5 h-2 w-2 rounded-full bg-destructive" />
         </button>
-
-        <DevAdminAvatar />
       </div>
     </header>
   );

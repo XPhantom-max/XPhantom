@@ -2,7 +2,7 @@
   "name": "xphantom-solana-token-site",
   "private": true,
   "version": "1.0.0",
-  "description": "XPhantom Solana token project website with Phantom wallet payments and hidden CA admin",
+  "description": "XPhantom Solana token project website with Phantom wallet payments and USDC balance checks",
   "homepage": "https://www.xphm.fun/",
   "repository": {
     "type": "git",

@@ -12,7 +12,7 @@ export const metadata = {
   openGraph: {
     title: "XPhantom | Privacy-First AI Orchestration",
     description:
-      "A Solana token project site with Phantom wallet payments, live CA publishing, and a hidden launch admin.",
+      "A Solana token project site with Phantom wallet payments, USDC balance checks, and a privacy-first dashboard narrative.",
     url: "https://www.xphm.fun/",
     siteName: "XPhantom",
     images: [
@@ -29,7 +29,7 @@ export const metadata = {
     card: "summary",
     title: "XPhantom | Privacy-First AI Orchestration",
     description:
-      "A Solana token project site with Phantom wallet payments, live CA publishing, and a hidden launch admin.",
+      "A Solana token project site with Phantom wallet payments, USDC balance checks, and a privacy-first dashboard narrative.",
     images: ["/xphantom-logo.png"],
   },
   icons: {

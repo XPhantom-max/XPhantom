@@ -3,7 +3,7 @@
 import { createContext, useContext, useMemo, useState } from "react";
 import { CheckCircle2, Copy, ExternalLink, RefreshCw, Shield, Wallet, X } from "lucide-react";
 
-const MERCHANT_WALLET = "FA9se1UMmzuuUSKvEDqaBKPqCL4vexsKU6cQ1QGgSRJr";
+const PAYMENT_WALLET = process.env.NEXT_PUBLIC_PAYMENT_WALLET || "";
 const SOLANA_USDC_MINT = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v";
 const SOLANA_RPC_URL = process.env.NEXT_PUBLIC_SOLANA_RPC_URL || "https://api.mainnet-beta.solana.com";
 
@@ -104,7 +104,7 @@ function buildPaymentUrl(plan) {
     memo: `XPHANTOM-${plan.id}-${Date.now()}`,
   });
 
-  return `solana:${MERCHANT_WALLET}?${params.toString()}`;
+  return `solana:${PAYMENT_WALLET}?${params.toString()}`;
 }
 
 export function TaskPaymentProvider({ children }) {
@@ -173,6 +173,11 @@ export function TaskPaymentProvider({ children }) {
   async function launchPayment() {
     if (!hasWallet) {
       await connectWallet();
+      return;
+    }
+
+    if (!PAYMENT_WALLET) {
+      setStatus("Payment wallet is not configured.");
       return;
     }
 
@@ -269,11 +274,13 @@ export function TaskPaymentProvider({ children }) {
               </p>
             ) : null}
 
-            <div className="payment-recipient">
-              <Shield className="h-4 w-4" />
-              <span>Recipient</span>
-              <code>{MERCHANT_WALLET}</code>
-            </div>
+            {PAYMENT_WALLET ? (
+              <div className="payment-recipient">
+                <Shield className="h-4 w-4" />
+                <span>Recipient</span>
+                <code>{shortenAddress(PAYMENT_WALLET)}</code>
+              </div>
+            ) : null}
 
             {status ? <p className="payment-status">{status}</p> : null}
 

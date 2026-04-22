@@ -306,7 +306,7 @@ function LedgerCard() {
         </button>
       </div>
       <div className="border-b border-border bg-secondary/30 px-5 py-4">
-        <p className="text-xs text-muted-foreground">Treasury balance</p>
+        <p className="text-xs text-muted-foreground">Settlement balance</p>
         <p className="mt-1 font-mono text-xl font-semibold text-foreground">
           •••••• <span className="text-sm text-muted-foreground">USDC</span>
         </p>
